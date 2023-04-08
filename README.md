@@ -1,10 +1,18 @@
-# Mimir Scaleup Script This script is designed for Kubernetes clusters running the Mimir application. It enables the scaling up of Mimir deployments and stateful sets by setting their replicas to the desired value.
+This is a Mimir Scaleup Script designed to scale up deployments and stateful sets in Kubernetes clusters running the Mimir application. The script allows setting replicas to desired values to facilitate scaling up.
 
-Usage Run the mimirscaleupdeployment.sh script to scale up Mimir deployments:
+To use the script, first make sure that kubectl command is configured to target the correct Kubernetes cluster and namespace. Then run the following commands:
 
-./mimirscaleupdeployment.sh Run the mimirscaleupsts.sh script to scale up Mimir stateful sets
+To scale up Mimir deployments, execute mimirscaleupdeployment.sh script.
+To scale up Mimir stateful sets, execute mimirscaleupsts.sh script.
+The script comes with the following files:
 
-./mimirscaleupsts.sh Before running the scripts, ensure that the kubectl command is configured to target the correct Kubernetes cluster and namespace.
+mimirdeployment.list: A list of Mimir deployments to be scaled up.
+mimirscaledowndeployment.sh: A script that scales up Mimir deployments based on mimirdeployment.list.
+mimirscaleupsts.sh: A script that scales up Mimir stateful sets based on mimirsts.list.
+mimirsts.list: A list of Mimir stateful sets to be scaled up.
+Here's an example usage:
 
-Files mimirdeployment.list: A list of Mimir deployments to be scaled up. mimirscaledowndeployment.sh: A script to scale up Mimir deployments based on mimirdeployment.list. mimirscaleupsts.sh: A script to scale up Mimir stateful sets based on mimirsts.list. mimirsts.list: A list of Mimir stateful sets to be scaled up. Usage example:
+
+./mimirscaleupdeployment.sh 
+./mimirscaleupsts.sh 
 
