@@ -1,0 +1,7 @@
+mimir-prod-alertmanager
+mimir-prod-compactor
+mimir-prod-index-cache
+mimir-prod-ingester
+mimir-prod-metadata-cache
+mimir-prod-results-cache
+mimir-prod-store-gateway

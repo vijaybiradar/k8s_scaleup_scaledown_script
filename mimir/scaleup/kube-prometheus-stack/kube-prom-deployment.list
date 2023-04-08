@@ -1,0 +1,3 @@
+kube-prometheus-stack-grafana
+kube-prometheus-stack-kube-state-metrics
+kube-prometheus-stack-operator
