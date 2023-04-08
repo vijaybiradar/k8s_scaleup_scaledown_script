@@ -1,0 +1,7 @@
+mimir-prod-distributor
+mimir-prod-querier
+mimir-prod-nginx
+mimir-prod-overrides-exporter
+mimir-prod-query-frontend
+mimir-prod-rollout-operator
+mimir-prod-ruler
